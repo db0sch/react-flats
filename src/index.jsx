@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 
 import '../assets/stylesheets/application.scss';
 
-const Hello = props => <div>Hello, {props.name}</div>;
+import App from './components/app.jsx'
 
 const root = document.getElementById('root');
 if (root) {
-  ReactDOM.render(<Hello name="World" />, root);
+  ReactDOM.render(<App defaultCoords={{lat: 48.884211,
+        lng: 2.34689}} defaultZoom={11} />, root);
 }
